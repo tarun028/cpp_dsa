@@ -23,7 +23,7 @@ void Inter(int arr1[],int arr2[],int n,int m){
 int main()
 {
     int arr1[]={1,2,3};
-    int arr2[]={3,4};
+    int arr2[]={3,4}; 
     Inter(arr1,arr2,3,2);
     
 
