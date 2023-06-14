@@ -58,8 +58,9 @@ int LastOcc(int arr[],int size,int key){
 int main()
 
 {
-    int even[]={1,2,3,3,5};
-    cout<<"First Occ is: "<<FirstOcc(even,5,3)<<endl;
-    cout<<"Last Occ is: "<<LastOcc(even,5,3);
+    int even[]={1,2,3,3,3,5};
+    int First = FirstOcc(even,5,3);
+    int Last = LastOcc(even,5,3);
+    cout<<"Total occ = "<<Last-First+1<<endl;
     return 0;
 }
