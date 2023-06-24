@@ -24,16 +24,22 @@ std::string decryptPlayfair(const std::string& ciphertext, const std::string& ke
 }
 
 int main() {
-    std::string plaintext = "HELLO WORLD";
-    std::string key = "KEYWORD";
-    
+    std::string plaintext;
+    std::string key;
+
+    std::cout << "Enter the plaintext: ";
+    std::getline(std::cin, plaintext);
+
+    std::cout << "Enter the key: ";
+    std::getline(std::cin, key);
+
     std::string preparedText = preparePlainText(plaintext);
     std::string encryptedText = encryptPlayfair(preparedText, key);
     std::string decryptedText = decryptPlayfair(encryptedText, key);
-    
+
     std::cout << "Plaintext: " << plaintext << std::endl;
     std::cout << "Encrypted Text: " << encryptedText << std::endl;
     std::cout << "Decrypted Text: " << decryptedText << std::endl;
-    
+
     return 0;
 }
