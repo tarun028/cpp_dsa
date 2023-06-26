@@ -13,7 +13,7 @@ bool isIdentifier(const string& str) {
         }
     }
 
-    return true;
+    return false;
 }
 
 int main() {
