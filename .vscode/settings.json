@@ -5,6 +5,7 @@
         "cstdlib": "cpp",
         "chrono": "cpp",
         "thread": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "array": "cpp"
     }
 }
